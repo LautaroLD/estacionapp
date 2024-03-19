@@ -9,7 +9,7 @@ export const Register = () => {
     <>
       <HeaderLanding />
 
-      <main className='p-4'>
+      <main className='p-6 sm:w-[800px] sm:m-auto sm:shadow-2xl'>
         {role === 'conductor' ? (
           <>
             <h1 className='font-semibold uppercase text-lg'>

@@ -91,7 +91,7 @@ export default function UserRegisterForm() {
             }
           }}
           type='file'
-          className='absolute border-4 opacity-0 w-full h-full z-10'
+          className='absolute border-4 opacity-0 w-full h-full z-10 cursor-pointer'
         />
       </label>
       <label className='flex-col flex mb-6'>
@@ -187,9 +187,10 @@ export default function UserRegisterForm() {
           <span className='text-red-500'>Las contraseñas no coinciden</span>
         )}
       </label>
+      <div className='flex flex-col gap-5 sm:flex-row'>
       <button
         type='submit'
-        className={`py-2 text-center ] rounded-3xl font-semibold w-full ${
+        className={`py-2 text-center ] rounded-3xl font-semibold w-full  ${
           isLoading ? 'bg-[#FFE9CC]' : 'bg-[#D58418]'
         }`}
       >
@@ -205,7 +206,7 @@ export default function UserRegisterForm() {
         )}
       </button>
       <button
-        className='border rounded-3xl p-2 font-bold text-center border-[#D58418]'
+        className='border rounded-3xl p-2 font-bold text-center border-[#D58418] w-full'
         type='button'
         onClick={(e) => {
           e.preventDefault();
@@ -214,6 +215,7 @@ export default function UserRegisterForm() {
       >
         cancelar
       </button>
+      </div>
     </form>
   );
 }
