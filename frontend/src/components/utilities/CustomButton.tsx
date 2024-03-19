@@ -9,8 +9,8 @@ interface CustomButtonProps {
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({ to, text, type, extraProps = {} }) => {
-  const primaryClasses = 'px-3 py-1 font-semibold rounded-3xl w-full border bg-[#D58418] text-center';
-  const secondaryClasses = 'px-3 py-1 font-semibold rounded-3xl w-full border-[2px] border-[#D58418] bg-white text-center';
+  const primaryClasses = 'px-3 py-1 font-semibold rounded-3xl w-full border bg-[#D58418] text-center text-base';
+  const secondaryClasses = 'px-3 py-1 font-semibold rounded-3xl w-full border-[2px] border-[#D58418] bg-white text-center text-base';
   const buttonClasses = type === 'primary' ? primaryClasses : secondaryClasses;
 
 
