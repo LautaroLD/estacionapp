@@ -210,7 +210,7 @@ export default function UserRegisterForm() {
         type='button'
         onClick={(e) => {
           e.preventDefault();
-          navigation('/registro');
+          navigation('/');
         }}
       >
         cancelar
